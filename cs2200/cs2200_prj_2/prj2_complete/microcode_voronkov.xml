@@ -1,0 +1,254 @@
+<Microcode>
+	<State name="FETCH0" onZ="false">
+		<Signal name="OPTest"/>
+		<Signal name="ChkZ"/>
+		<Signal name="DrEnInt"/>
+		<Goto state="FETCH1"/>
+	</State>
+
+	<State name="FETCH9" onInt="false">
+		<Signal name="DrPC"/>
+		<Signal name="LdMAR"/>
+		<Signal name="LdA"/>
+		<Goto state="FETCH7"/>
+	</State>
+	
+	<State name="FETCH1" onInt="true">
+	    <Signal name="RegSelLo"/>
+		<Signal name="RegSelHi"/>
+		<Signal name="WrReg"/>
+		<Signal name="DrPC"/>
+		<Signal name="IntAck"/>
+		<Goto state="FETCH2"/>	
+	</State>
+	
+	<State name="FETCH2">
+		<Signal name="LdMAR"/>
+		<Signal name="LdA"/>
+		<Signal name="LdB"/>
+		<Goto state="FETCH5"/>
+	</State>
+
+	<State name="FETCH5">
+		<Signal name="ALUHi"/>
+		<Signal name="DrALU"/>
+		<Signal name="LdEnInt"/>
+		<Goto state="FETCH6"/>
+	</State>
+	
+	<State name="FETCH6">
+	    <Signal name="DrMEM"/>
+		<Signal name="LdMar"/>
+		<Signal name="LdA"/>
+		<Goto state="FETCH7"/>
+	</State>
+	
+	<State name="FETCH7">
+		<Signal name="DrMEM"/>
+		<Signal name="LdIR"/>
+		<Goto state="FETCH8"/>
+	</State>
+
+	<State name="FETCH8">
+		<Signal name="ALULo"/>
+		<Signal name="ALUHi"/>
+		<Signal name="DrALU"/>
+		<Signal name="LdPC"/>
+		<Signal name="OPTest"/>
+	</State>
+	
+	
+	
+	<State name="ADD0">
+		<Signal name = "DrREG"/>
+		<Signal name = "LdA"/>
+		<Goto state="ADD1"/>
+	</State>
+	<State name="ADD1">
+		<Signal name="DrREG"/>
+		<Signal name="RegSelLo"/>
+		<Signal name="LdB"/>
+		<Goto state="ADD2"/>
+	</State>
+	<State name="ADD2">
+		<Signal name="DrALU"/>
+		<Signal name = "RegSelHi"/>
+		<Signal name="WrREG"/>
+		<Goto state="FETCH0"/>
+	</State>
+
+	<State name="ADDI0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Goto state="ADDI1"/>
+	</State>
+	<State name="ADDI1">
+		<Signal name="DrOFF"/>
+		<Signal name="LdB"/>
+		<Goto state="ADDI2"/>
+	</State>
+	<State name="ADDI2">
+		<Signal name = "RegSelLo"/>
+		<Signal name="DrALU"/>
+		<Signal name="WrREG"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+	<State name="NAND0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Goto state="NAND1"/>
+	</State>
+	<State name="NAND1">
+		<Signal name="DrREG"/>
+		<Signal name="RegSelLo"/>
+		<Signal name="LdB"/>
+		<Goto state="NAND2"/>
+	</State>
+	<State name="NAND2">
+		<Signal name="RegSelHi"/>
+		<Signal name="ALULo"/>
+		<Signal name="DrALU"/>
+		<Signal name="WrREG"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+	<State name="JALR0">
+		<Signal name="RegSelLo"/>
+		<Signal name="DrPC"/>
+		<Signal name="WrREG"/>
+		<Goto state= "JALR1"/>
+	</State>
+	<State name="JALR1">
+		<Signal name="DrREG"/>
+		<Signal name="LdPC"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+	<State name="LW0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Goto state="LW1"/>
+	</State>
+	<State name="LW1">
+		<Signal name="DrOFF"/>
+		<Signal name="LdB"/>
+		<Goto state="LW2"/>
+	</State>
+	<State name="LW2">
+		<Signal name="DrALU"/>
+		<Signal name="LdMAR"/>
+		<Goto state="LW3"/>
+	</State>
+	<State name="LW3">
+		<Signal name="RegSelLo"/>
+		<Signal name="DrMEM"/>
+		<Signal name="WrREG"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+	<State name="SW0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Goto state="SW1"/>
+	</State>
+	<State name="SW1">
+		<Signal name="DrOFF"/>
+		<Signal name="LdB"/>
+		<Goto state="SW2"/>
+	</State>
+	<State name="SW2">
+		<Signal name="DrALU"/>
+		<Signal name="LdMAR"/>
+		<Goto state="SW3"/>
+	</State>
+	<State name="SW3">
+		<Signal name="RegSelLo"/>
+		<Signal name="DrREG"/>
+		<Signal name="WrMEM"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+	<State name="BEQ0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Goto state="BEQ1"/>
+	</State>
+	<State name="BEQ1">
+		<Signal name="RegSelLO"/>
+		<Signal name="DrREG"/>
+		<Signal name="LdB"/>
+		<Goto state="BEQ2"/>
+	</State>
+	<State name="BEQ2">
+		<Signal name="ALUHi"/>
+		<Signal name="DrALU"/>
+		<Signal name="LdZ"/>
+		<Goto state="BEQ3"/>
+	</State>
+	<State name="BEQ3">
+		<Signal name="chkZ"/>
+	</State>
+	<State name="BEQ4" onZ="true">
+		<Signal name="DrPC"/>
+		<Signal name="LdA"/>
+		<Goto state="BEQ5"/>
+	</State>
+	<State name="BEQ5">
+		<Signal name="DrOFF"/>
+		<Signal name="LdB"/>
+		<Goto state="BEQ6"/>
+	</State>
+	<State name="BEQ6">
+		<Signal name="DrALU"/>
+		<Signal name="LdPC"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+	<State name="HALT0">
+		<Goto state="HALT0"/>
+	</State>
+
+
+	<State name="EI0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Signal name="LdB"/>
+		<Goto state="EI3"/>
+	</State>
+	<State name="EI3">
+	    <Signal name="ALULo"/>
+		<Signal name="DrALU"/>
+		<Signal name="LdEnInt"/>
+		<Goto state="FETCH0"/>
+	</State>
+
+
+	
+	<State name="DI0">
+		<Signal name="DrREG"/>
+		<Signal name="LdA"/>
+		<Goto state="DI1"/>
+	</State>
+	<State name="DI1">
+		<Signal name="DrREG"/>
+		<Signal name="LdB"/>
+		<Goto state="DI2"/>
+	</State>
+	<State name="DI2">
+		<Signal name="ALUHi"/>
+		<Signal name="DrALU"/>
+		<Signal name="LdEnInt"/>
+		<Goto state="FETCH0"/>
+	</State>
+	
+
+	<State name="RETI0">
+		<Signal name="RegSelLo"/>
+		<Signal name="RegSelHi"/>
+		<Signal name="DrReg"/>
+		<Signal name="LdPC"/>
+		<Goto state= "EI0"/>
+	</State>
+
+</Microcode>

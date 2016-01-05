@@ -1,0 +1,11 @@
+../sim	--print_inst=0	--max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --trace_file="trace2.pzip" --output_file="sim2full.mine.out" > dump2full.mine.txt
+../sim	--print_inst=0	--max_inst_count=0 --max_sim_count=0 --print_pipe_freq=0 --trace_file="trace3.pzip"	--output_file="sim3full.mine.out" > dump3full.mine.txt
+../sim	--print_inst=1	--max_inst_count=30 --max_sim_count=0 --print_pipe_freq=1 --trace_file="trace2.pzip" --output_file="sim2small.mine.out" > dump2small.mine.txt
+
+diff dump2full.mine.txt dump2full.txt
+diff dump3full.mine.txt dump3full.txt
+diff dump2small.mine.txt dump2small.txt
+
+diff sim2full.mine.out sim2full.out
+diff sim3full.mine.out sim3full.out
+diff sim2small.mine.out sim2small.out

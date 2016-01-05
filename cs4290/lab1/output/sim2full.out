@@ -1,0 +1,8 @@
+Total instruction: 1743560
+Total cycles: 4394722
+IPC: 0.39674
+Total I-cache miss: 0
+Total D-cache miss: 0
+Total L2-cache miss: 0
+Total data hazard: 1204698
+Total control hazard : 127823

@@ -1,0 +1,892 @@
+max_sim_count   =   0
+max_inst_count   =   30
+output_file   =   sim2small.out
+print_inst   =   1
+perfect_icache   =   1
+perfect_dcache   =   1
+perfect_br   =   1
+perfect_l2   =   1
+read_trace   =   1
+trace_file   =   trace2.pzip
+issue_width   =   1
+icache_latency   =   1
+dcache_latency   =   1
+mem_latency   =   1
+l2cache_latency   =   1
+print_pipe_freq   =   1
+*****Trace Data **** 
+inst_addr:3128400b00
+inst_size:3
+num_src:1
+src[0]:f
+src[1]:ffffffff
+dst: c
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28400b00
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 1 retired_instruction : 0
+1 FE: 0 ID: #### EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128400b03
+inst_size:5
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 2
+is_fp: 0
+cf_type: 3
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28400b03
+branch_traget: 28401130
+actually_taken: 1
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 2 retired_instruction : 0
+2 FE: 1 ID: 0 EX: #### MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 3 retired_instruction : 0
+3 FE: 1 ID: 0 EX: #### MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 4 retired_instruction : 0
+4 FE: #### ID: 1 EX: 0 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 5 retired_instruction : 0
+5 FE: #### ID: #### EX: 1 MEM: 0
+--------------------------------------------
+--------------------------------------------
+cycle count : 6 retired_instruction : 1
+6 FE: #### ID: #### EX: #### MEM: 1
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401130
+inst_size:1
+num_src:1
+src[0]:e
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 7fff45f06d00
+instruction_addr: 28401130
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 7 retired_instruction : 2
+7 FE: 2 ID: #### EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401131
+inst_size:3
+num_src:1
+src[0]:f
+src[1]:ffffffff
+dst: e
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401131
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 8 retired_instruction : 2
+8 FE: 3 ID: 2 EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401134
+inst_size:2
+num_src:1
+src[0]:1b
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 7fff45f06cf8
+instruction_addr: 28401134
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 9 retired_instruction : 2
+9 FE: 4 ID: 3 EX: 2 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 10 retired_instruction : 2
+10 FE: 4 ID: 3 EX: #### MEM: 2
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401136
+inst_size:2
+num_src:1
+src[0]:1a
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 7fff45f06cf0
+instruction_addr: 28401136
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 11 retired_instruction : 3
+11 FE: 5 ID: 4 EX: 3 MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401138
+inst_size:2
+num_src:1
+src[0]:19
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 7fff45f06ce8
+instruction_addr: 28401138
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 12 retired_instruction : 3
+12 FE: 6 ID: 5 EX: 4 MEM: 3
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840113a
+inst_size:2
+num_src:1
+src[0]:18
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 7fff45f06ce0
+instruction_addr: 2840113a
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 13 retired_instruction : 4
+13 FE: 7 ID: 6 EX: 5 MEM: 4
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840113c
+inst_size:1
+num_src:1
+src[0]:10
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 7fff45f06cd8
+instruction_addr: 2840113c
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 14 retired_instruction : 5
+14 FE: 8 ID: 7 EX: 6 MEM: 5
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840113d
+inst_size:3
+num_src:1
+src[0]:c
+src[1]:ffffffff
+dst: 10
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840113d
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 15 retired_instruction : 6
+15 FE: 9 ID: 8 EX: 7 MEM: 6
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401140
+inst_size:4
+num_src:1
+src[0]:f
+src[1]:ffffffff
+dst: f
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401140
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 16 retired_instruction : 7
+16 FE: 10 ID: 9 EX: 8 MEM: 7
+--------------------------------------------
+--------------------------------------------
+cycle count : 17 retired_instruction : 8
+17 FE: 10 ID: 9 EX: #### MEM: 8
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401144
+inst_size:2
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401144
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 18 retired_instruction : 9
+18 FE: 11 ID: 10 EX: 9 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 19 retired_instruction : 9
+19 FE: 11 ID: 10 EX: #### MEM: 9
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401146
+inst_size:4
+num_src:1
+src[0]:11
+src[1]:ffffffff
+dst: 11
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401146
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 20 retired_instruction : 10
+20 FE: 12 ID: 11 EX: 10 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 21 retired_instruction : 10
+21 FE: 12 ID: 11 EX: #### MEM: 10
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840114a
+inst_size:2
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840114a
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 22 retired_instruction : 11
+22 FE: 13 ID: 12 EX: 11 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 23 retired_instruction : 11
+23 FE: 13 ID: 12 EX: #### MEM: 11
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840114c
+inst_size:3
+num_src:2
+src[0]:11
+src[1]:13
+dst: 11
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840114c
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 24 retired_instruction : 12
+24 FE: 14 ID: 13 EX: 12 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 25 retired_instruction : 12
+25 FE: 14 ID: 13 EX: #### MEM: 12
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840114f
+inst_size:7
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: 19
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840114f
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 26 retired_instruction : 13
+26 FE: 15 ID: 14 EX: 13 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 27 retired_instruction : 13
+27 FE: 15 ID: 14 EX: #### MEM: 13
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401156
+inst_size:7
+num_src:1
+src[0]:19
+src[1]:ffffffff
+dst: 19
+opcode: 5
+is_fp: 0
+cf_type: 0
+mem_type: 1
+write_flag: 0
+ld_vaddr: 312861fb80
+st_vaddr: 0
+instruction_addr: 28401156
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 8
+mem_write_size: 0
+--------------------------------------------
+cycle count : 28 retired_instruction : 14
+28 FE: 16 ID: 15 EX: 14 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 29 retired_instruction : 14
+29 FE: 16 ID: 15 EX: #### MEM: 14
+--------------------------------------------
+--------------------------------------------
+cycle count : 30 retired_instruction : 15
+30 FE: 16 ID: #### EX: 15 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 31 retired_instruction : 15
+31 FE: 16 ID: #### EX: #### MEM: 15
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840115d
+inst_size:7
+num_src:1
+src[0]:11
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 312861fd48
+instruction_addr: 2840115d
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 32 retired_instruction : 16
+32 FE: 17 ID: 16 EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401164
+inst_size:3
+num_src:1
+src[0]:19
+src[1]:ffffffff
+dst: 11
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401164
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 33 retired_instruction : 16
+33 FE: 18 ID: 17 EX: 16 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 34 retired_instruction : 16
+34 FE: 18 ID: #### EX: 17 MEM: 16
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401167
+inst_size:7
+num_src:1
+src[0]:11
+src[1]:ffffffff
+dst: 11
+opcode: 5
+is_fp: 0
+cf_type: 0
+mem_type: 1
+write_flag: 0
+ld_vaddr: 312861ffc8
+st_vaddr: 0
+instruction_addr: 28401167
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 8
+mem_write_size: 0
+--------------------------------------------
+cycle count : 35 retired_instruction : 17
+35 FE: 19 ID: 18 EX: #### MEM: 17
+--------------------------------------------
+--------------------------------------------
+cycle count : 36 retired_instruction : 18
+36 FE: 19 ID: 18 EX: #### MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 37 retired_instruction : 18
+37 FE: 19 ID: #### EX: 18 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 38 retired_instruction : 18
+38 FE: 19 ID: #### EX: #### MEM: 18
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840116e
+inst_size:7
+num_src:1
+src[0]:19
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 3128620998
+instruction_addr: 2840116e
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 39 retired_instruction : 19
+39 FE: 20 ID: 19 EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401175
+inst_size:3
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: 13
+opcode: 5
+is_fp: 0
+cf_type: 0
+mem_type: 1
+write_flag: 0
+ld_vaddr: 312861fdf0
+st_vaddr: 0
+instruction_addr: 28401175
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 8
+mem_write_size: 0
+--------------------------------------------
+cycle count : 40 retired_instruction : 19
+40 FE: 21 ID: 20 EX: 19 MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401178
+inst_size:7
+num_src:1
+src[0]:11
+src[1]:ffffffff
+dst: ffffffff
+opcode: 6
+is_fp: 0
+cf_type: 0
+mem_type: 2
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 31286209a8
+instruction_addr: 28401178
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 8
+--------------------------------------------
+cycle count : 41 retired_instruction : 19
+41 FE: 22 ID: 21 EX: 20 MEM: 19
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840117f
+inst_size:3
+num_src:2
+src[0]:13
+src[1]:13
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840117f
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 42 retired_instruction : 20
+42 FE: 23 ID: 22 EX: 21 MEM: 20
+--------------------------------------------
+--------------------------------------------
+cycle count : 43 retired_instruction : 21
+43 FE: 23 ID: #### EX: 22 MEM: 21
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401182
+inst_size:2
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 2
+is_fp: 0
+cf_type: 2
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401182
+branch_traget: 284011f7
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 44 retired_instruction : 22
+44 FE: 24 ID: 23 EX: #### MEM: 22
+--------------------------------------------
+--------------------------------------------
+cycle count : 45 retired_instruction : 23
+45 FE: 24 ID: 23 EX: #### MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 46 retired_instruction : 23
+46 FE: #### ID: 24 EX: 23 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 47 retired_instruction : 23
+47 FE: #### ID: #### EX: 24 MEM: 23
+--------------------------------------------
+--------------------------------------------
+cycle count : 48 retired_instruction : 24
+48 FE: #### ID: #### EX: #### MEM: 24
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401184
+inst_size:7
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: d
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401184
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 49 retired_instruction : 25
+49 FE: 25 ID: #### EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840118b
+inst_size:5
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840118b
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 50 retired_instruction : 25
+50 FE: 26 ID: 25 EX: #### MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 51 retired_instruction : 25
+51 FE: 26 ID: 25 EX: #### MEM: ####
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401190
+inst_size:6
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401190
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 52 retired_instruction : 25
+52 FE: 27 ID: 26 EX: 25 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 53 retired_instruction : 25
+53 FE: 27 ID: 26 EX: #### MEM: 25
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:3128401196
+inst_size:6
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 28401196
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 54 retired_instruction : 26
+54 FE: 28 ID: 27 EX: 26 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 55 retired_instruction : 26
+55 FE: 28 ID: 27 EX: #### MEM: 26
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:312840119c
+inst_size:6
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 2840119c
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 56 retired_instruction : 27
+56 FE: 29 ID: 28 EX: 27 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 57 retired_instruction : 27
+57 FE: 29 ID: 28 EX: #### MEM: 27
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:31284011a2
+inst_size:6
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 284011a2
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 58 retired_instruction : 28
+58 FE: 30 ID: 29 EX: 28 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 59 retired_instruction : 28
+59 FE: 30 ID: 29 EX: #### MEM: 28
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:31284011a8
+inst_size:6
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 8
+is_fp: 0
+cf_type: 0
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 284011a8
+branch_traget: 0
+actually_taken: 0
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 60 retired_instruction : 29
+60 FE: 31 ID: 30 EX: 29 MEM: ####
+--------------------------------------------
+--------------------------------------------
+cycle count : 61 retired_instruction : 29
+61 FE: 31 ID: 30 EX: #### MEM: 29
+--------------------------------------------
+*****Trace Data **** 
+inst_addr:31284011ae
+inst_size:2
+num_src:0
+src[0]:ffffffff
+src[1]:ffffffff
+dst: ffffffff
+opcode: 2
+is_fp: 0
+cf_type: 2
+mem_type: 0
+write_flag: 0
+ld_vaddr: 0
+st_vaddr: 0
+instruction_addr: 284011ae
+branch_traget: 284011c4
+actually_taken: 1
+mem_read_size: 0
+mem_write_size: 0
+--------------------------------------------
+cycle count : 62 retired_instruction : 30
+62 FE: 32 ID: 31 EX: 30 MEM: ####
+--------------------------------------------
+**Heartbeat** cycle_count: 62 inst:30 IPC: 0.483871 Overall IPC: 0.483871

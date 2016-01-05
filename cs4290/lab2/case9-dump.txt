@@ -1,0 +1,841 @@
+max_sim_count   =   0
+max_inst_count   =   0
+output_file   =   case9.out
+print_inst   =   0
+perfect_icache   =   1
+perfect_dcache   =   0
+perfect_br   =   1
+perfect_l2   =   1
+read_trace   =   1
+trace_file   =   case9.pzip
+issue_width   =   1
+icache_latency   =   1
+dcache_latency   =   5
+mem_latency   =   1
+l2cache_latency   =   1
+print_pipe_freq   =   1
+dcache_size   =   64
+dcache_way   =   4
+block_size   =   64
+dcache_fixed_penalty   =   200
+mem_latency_row_hit   =   10
+mem_latency_row_miss   =   20
+mshr_size   =   4
+dram_bank_num   =   4
+dram_page_size   =   2
+print_mem_debug   =   0
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 1 retired_instruction : 0
+1 FE: 0 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 2 retired_instruction : 0
+2 FE: 1 ID: 0 EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 3 retired_instruction : 0
+3 FE: 2 ID: 1 EX: 0 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+mem instruction
+--------------------------------------------
+cycle count : 4 retired_instruction : 0
+4 FE: 2 ID: 1 EX: 0 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 5 retired_instruction : 0
+5 FE: 2 ID: 1 EX: 0 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 6 retired_instruction : 0
+6 FE: 2 ID: 1 EX: 0 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 7 retired_instruction : 0
+7 FE: 2 ID: 1 EX: 0 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache miss
+will piggyback
+insert_mshr inst_id: 0
+--------------------------------------------
+cycle count : 8 retired_instruction : 0
+8 FE: 3 ID: 2 EX: 1 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+mem instruction
+--------------------------------------------
+cycle count : 9 retired_instruction : 0
+9 FE: 3 ID: 2 EX: 1 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 10 retired_instruction : 0
+10 FE: 3 ID: 2 EX: 1 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 11 retired_instruction : 0
+11 FE: 3 ID: 2 EX: 1 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 12 retired_instruction : 0
+12 FE: 3 ID: 2 EX: 1 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache miss
+is_piggyback
+--------------------------------------------
+cycle count : 13 retired_instruction : 0
+13 FE: 3 ID: #### EX: 2 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 14 retired_instruction : 0
+14 FE: 3 ID: #### EX: 2 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 15 retired_instruction : 0
+15 FE: 3 ID: #### EX: 2 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 16 retired_instruction : 0
+16 FE: 3 ID: #### EX: 2 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 17 retired_instruction : 0
+17 FE: 3 ID: #### EX: 2 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache miss
+will piggyback
+tempOp->inst_id: 0
+tempOp->inst_id: 1
+is_piggyback
+--------------------------------------------
+cycle count : 18 retired_instruction : 0
+18 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 19 retired_instruction : 0
+19 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 20 retired_instruction : 0
+20 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 21 retired_instruction : 0
+21 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 22 retired_instruction : 0
+22 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 23 retired_instruction : 0
+23 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 24 retired_instruction : 0
+24 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 25 retired_instruction : 0
+25 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 26 retired_instruction : 0
+26 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 27 retired_instruction : 0
+27 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 28 retired_instruction : 0
+28 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 29 retired_instruction : 0
+29 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 30 retired_instruction : 0
+30 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 31 retired_instruction : 0
+31 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+--------------------------------------------
+cycle count : 32 retired_instruction : 0
+32 FE: 3 ID: #### EX: #### MEM: ####
+--------------------------------------------
+broadcasting cycle_count: 33, inst_id: 0
+broadcasting cycle_count: 33, inst_id: 1
+broadcasting cycle_count: 33, inst_id: 2
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+op freed
+op freed
+op freed
+--------------------------------------------
+cycle count : 33 retired_instruction : 3
+33 FE: 4 ID: 3 EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 34 retired_instruction : 3
+34 FE: 5 ID: 4 EX: 3 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+mem instruction
+--------------------------------------------
+cycle count : 35 retired_instruction : 3
+35 FE: 5 ID: 4 EX: 3 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 36 retired_instruction : 3
+36 FE: 5 ID: 4 EX: 3 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 37 retired_instruction : 3
+37 FE: 5 ID: 4 EX: 3 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 38 retired_instruction : 3
+38 FE: 5 ID: 4 EX: 3 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache hit
+--------------------------------------------
+cycle count : 39 retired_instruction : 3
+39 FE: 6 ID: 5 EX: 4 MEM: 3 
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+op freed
+mem instruction
+--------------------------------------------
+cycle count : 40 retired_instruction : 4
+40 FE: 6 ID: 5 EX: 4 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 41 retired_instruction : 4
+41 FE: 6 ID: 5 EX: 4 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 42 retired_instruction : 4
+42 FE: 6 ID: 5 EX: 4 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 43 retired_instruction : 4
+43 FE: 6 ID: 5 EX: 4 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache miss
+will piggyback
+insert_mshr inst_id: 4
+--------------------------------------------
+cycle count : 44 retired_instruction : 4
+44 FE: 7 ID: 6 EX: 5 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+mem instruction
+--------------------------------------------
+cycle count : 45 retired_instruction : 4
+45 FE: 7 ID: 6 EX: 5 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 46 retired_instruction : 4
+46 FE: 7 ID: 6 EX: 5 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 47 retired_instruction : 4
+47 FE: 7 ID: 6 EX: 5 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 48 retired_instruction : 4
+48 FE: 7 ID: 6 EX: 5 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache hit
+--------------------------------------------
+cycle count : 49 retired_instruction : 4
+49 FE: 8 ID: 7 EX: 6 MEM: 5 
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+op freed
+mem instruction
+--------------------------------------------
+cycle count : 50 retired_instruction : 5
+50 FE: 8 ID: 7 EX: 6 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 51 retired_instruction : 5
+51 FE: 8 ID: 7 EX: 6 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 52 retired_instruction : 5
+52 FE: 8 ID: 7 EX: 6 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 53 retired_instruction : 5
+53 FE: 8 ID: 7 EX: 6 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache hit
+--------------------------------------------
+cycle count : 54 retired_instruction : 5
+54 FE: 9 ID: 8 EX: 7 MEM: 6 
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+op freed
+mem instruction
+--------------------------------------------
+cycle count : 55 retired_instruction : 6
+55 FE: 9 ID: 8 EX: 7 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 56 retired_instruction : 6
+56 FE: 9 ID: 8 EX: 7 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 57 retired_instruction : 6
+57 FE: 9 ID: 8 EX: 7 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 58 retired_instruction : 6
+58 FE: 9 ID: 8 EX: 7 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache miss
+will piggyback
+insert_mshr inst_id: 7
+--------------------------------------------
+cycle count : 59 retired_instruction : 6
+59 FE: 10 ID: 9 EX: 8 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+mem instruction
+--------------------------------------------
+cycle count : 60 retired_instruction : 6
+60 FE: 10 ID: 9 EX: 8 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 61 retired_instruction : 6
+61 FE: 10 ID: 9 EX: 8 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 62 retired_instruction : 6
+62 FE: 10 ID: 9 EX: 8 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 63 retired_instruction : 6
+63 FE: 10 ID: 9 EX: 8 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache hit
+--------------------------------------------
+cycle count : 64 retired_instruction : 6
+64 FE: #### ID: 10 EX: 9 MEM: 8 
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+op freed
+mem instruction
+--------------------------------------------
+cycle count : 65 retired_instruction : 7
+65 FE: #### ID: 10 EX: 9 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 66 retired_instruction : 7
+66 FE: #### ID: 10 EX: 9 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 67 retired_instruction : 7
+67 FE: #### ID: 10 EX: 9 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 68 retired_instruction : 7
+68 FE: #### ID: 10 EX: 9 MEM: ####
+--------------------------------------------
+broadcasting cycle_count: 69, inst_id: 4
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+op freed
+mem instruction
+cache hit
+--------------------------------------------
+cycle count : 69 retired_instruction : 8
+69 FE: #### ID: #### EX: 10 MEM: 9 
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+op freed
+mem instruction
+--------------------------------------------
+cycle count : 70 retired_instruction : 9
+70 FE: #### ID: #### EX: 10 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 71 retired_instruction : 9
+71 FE: #### ID: #### EX: 10 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 72 retired_instruction : 9
+72 FE: #### ID: #### EX: 10 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+--------------------------------------------
+cycle count : 73 retired_instruction : 9
+73 FE: #### ID: #### EX: 10 MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 1
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 1
+mem instruction
+cache hit
+--------------------------------------------
+cycle count : 74 retired_instruction : 9
+74 FE: #### ID: #### EX: #### MEM: 10 
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+op freed
+--------------------------------------------
+cycle count : 75 retired_instruction : 10
+75 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 76 retired_instruction : 10
+76 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 77 retired_instruction : 10
+77 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 78 retired_instruction : 10
+78 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 79 retired_instruction : 10
+79 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 80 retired_instruction : 10
+80 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 81 retired_instruction : 10
+81 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 82 retired_instruction : 10
+82 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 83 retired_instruction : 10
+83 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 84 retired_instruction : 10
+84 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 85 retired_instruction : 10
+85 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 86 retired_instruction : 10
+86 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 87 retired_instruction : 10
+87 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 88 retired_instruction : 10
+88 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+--------------------------------------------
+cycle count : 89 retired_instruction : 10
+89 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+broadcasting cycle_count: 90, inst_id: 7
+test in run a cycleMEM_busy: 0
+EX_Busy: 0
+cf_stall: 0
+ID_stall: 0
+end condition
+op freed
+--------------------------------------------
+cycle count : 90 retired_instruction : 11
+90 FE: #### ID: #### EX: #### MEM: ####
+--------------------------------------------
+**Heartbeat** cycle_count: 90 inst:11 IPC: 0.122222 Overall IPC: 0.122222

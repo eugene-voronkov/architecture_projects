@@ -1,0 +1,11 @@
+Total instruction: 3
+Total cycles: 33
+IPC: 0.0909091
+Total I-cache miss: 0
+Total D-cache miss: 3
+Total D-cache hit: 0
+Total data hazard: 0
+Total control hazard : 0
+Total DRAM ROW BUFFER Hit: 0
+Total DRAM ROW BUFFER Miss: 1
+ Total Store-load forwarding: 0

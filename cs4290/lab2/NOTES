@@ -1,0 +1,84 @@
+Inside the simulator, the simulator calls the dcache_access function at the last cycle of dcache access latency to mimic the actual hardware more closely. In other words, if KNOB_DCACHE_LATENCY is 3, and a memory op starts to access the dcache at cycle 4 in the simulator. (i.e., the op is latched into the EXE_latch at the end of cycle 3). The simulator calls dcache_access at cycle 6, so that the LRU replacement policy and/or an insertion into mshr_entry are done at cycle 6. 
+
+[4]: If there is no match in MSHR, the processor checks the size of MSHR. If there is no space in the MSHR, the processor stalls. When there is a space in the MSHR, the processor can put a request into the MSHR. The mem stage can process a new instruction from the following cycle. If there is space in the MSHR, the processor creates an entry in the MSHR. 
+
+
+Sending bubble
+Setting stall
+
+
+*If MSHR full stall MEM
+*Make MEM_latch into linked list
+*Change to pass op into MEM_latch only if not a mem access instruction
+	*-MEM instructions get into WB/MEM_latch_list using broadcast_rdy_op
+	*-All ops in MEM_latch_list are processed in one cycle
+*memory requests get into cache using broadcast_rdy_op() or fill_queue()
+update sim end condition to take into account requests still in ram
+update count variables
+
+
+
+case8-dump.txt
+**Heartbeat** cycle_count: 96 inst:11 IPC: 0.114583 Overall IPC: 0.114583
+mine
+**Heartbeat** cycle_count: 101 inst:11 IPC: 0.108911 Overall IPC: 0.108911
+
+case9-dump.txt
+**Heartbeat** cycle_count: 106 inst:11 IPC: 0.103774 Overall IPC: 0.103774
+mine
+**Heartbeat** cycle_count: 90 inst:11 IPC: 0.122222 Overall IPC: 0.122222
+
+broadcasting cycle_count: 215, inst_id: 2
+broadcasting cycle_count: 215, inst_id: 4
+broadcasting cycle_count: 215, inst_id: 13
+broadcasting cycle_count: 234, inst_id: 12
+
+
+
+
+insert_mshr inst_id: 2
+insert_mshr inst_id: 12
+
+
+op freed
+--------------------------------------------
+cycle count : 215 retired_instruction : 12
+215 FE: 13 ID: #### EX: #### MEM: 413
+--------------------------------------------
+
+op freed
+--------------------------------------------
+cycle count : 216 retired_instruction : 13
+216 FE: 13 ID: #### EX: #### MEM: 13
+--------------------------------------------
+
+
+op freed
+--------------------------------------------
+cycle count : 217 retired_instruction : 14
+217 FE: 13 ID: #### EX: #### MEM: ####
+--------------------------------------------
+
+op freed
+--------------------------------------------
+cycle count : 234 retired_instruction : 15
+234 FE: 14 ID: 13 EX: #### MEM: ####
+--------------------------------------------
+
+
+
+--------------------------------------------
+cycle count : 236 retired_instruction : 15
+236 FE: 14 ID: #### EX: 13 MEM: ####
+--------------------------------------------
+
+
+
+--------------------------------------------
+cycle count : 237 retired_instruction : 15
+237 FE: 14 ID: #### EX: #### MEM: 13
+--------------------------------------------
+
+
+
+cycle 5166
